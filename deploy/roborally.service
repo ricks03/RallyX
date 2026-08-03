@@ -1,0 +1,56 @@
+# RoboRally game server
+#
+#   sudo cp roborally.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now roborally
+#   sudo journalctl -u roborally -f
+#
+# Database credentials go in /etc/roborally.env, NOT in this file:
+# systemd unit files are world-readable by default, EnvironmentFile is not.
+#
+# On CentOS/RHEL the nologin shell is /sbin/nologin, not /usr/sbin/nologin.
+#
+#   sudo tee /etc/roborally.env >/dev/null <<'EOF'
+#   DB_HOST=127.0.0.1
+#   DB_USER=roborally
+#   DB_PASSWORD=...
+#   DB_NAME=roborally
+#   PORT=3001
+#   EOF
+#   sudo chmod 600 /etc/roborally.env
+#   sudo chown root:root /etc/roborally.env
+
+[Unit]
+Description=RoboRally game server
+After=network.target mariadb.service
+Wants=mariadb.service
+
+[Service]
+Type=simple
+User=roborally
+Group=roborally
+WorkingDirectory=/opt/roborally
+EnvironmentFile=/etc/roborally.env
+ExecStart=/usr/bin/node server/dist/main.js
+Restart=always
+RestartSec=2
+
+# The process binds 127.0.0.1 itself, so it never needs a privileged port
+# and never needs root.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/roborally
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+# Node's default heap is fine here; the largest thing in memory is one
+# composed grid per active course.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=roborally
+
+[Install]
+WantedBy=multi-user.target

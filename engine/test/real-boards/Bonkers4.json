@@ -1,0 +1,1796 @@
+{
+   "cells" : [
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "N",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "S"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "S"
+               ],
+               "exit" : "N",
+               "express" : false,
+               "rotates" : {
+                  "S" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "N",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "S"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "teleporter" : true
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "S"
+               ],
+               "exit" : "N",
+               "express" : false,
+               "rotates" : {
+                  "S" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "blue"
+            }
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "darkred"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "green"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1,
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "red"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "green"
+            }
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2,
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "blue"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "darkred"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "W"
+            }
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "red"
+            },
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "chopShop" : true,
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "repulsor"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "E"
+            },
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "W"
+            },
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "repulsor"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "chopShop" : true,
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "magenta"
+            },
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "black"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "yellow"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "W"
+            }
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2,
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "orange"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "magenta"
+            }
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1,
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "orange"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "black"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "portal" : {
+               "colour" : "yellow"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "teleporter" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "S",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "N"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "S",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "N"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "S"
+               ],
+               "exit" : "N",
+               "express" : false,
+               "rotates" : {
+                  "S" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         }
+      ]
+   ],
+   "height" : 12,
+   "name" : "Bonkers4",
+   "width" : 12
+}

@@ -1,0 +1,2301 @@
+{
+   "cells" : [
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "generator" : {
+               "colour" : "red"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E",
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               },
+               {
+                  "along" : "S",
+                  "count" : 1
+               },
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "S",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "W" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "generator" : {
+               "colour" : "red"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "W"
+            }
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "W" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "generator" : {
+               "colour" : "red"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "S"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "S" : "CCW"
+               }
+            },
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radioactiveWaste" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "level" : 0,
+            "radiation" : true
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E",
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none",
+                  "N" : "CW"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "S"
+               ],
+               "exit" : "N",
+               "express" : false,
+               "rotates" : {
+                  "S" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ],
+               "N" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ],
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "green"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "oneWay" : "red"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "S",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "N"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "generator" : {
+               "colour" : "red"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         }
+      ]
+   ],
+   "height" : 12,
+   "name" : "Containment7",
+   "width" : 12
+}

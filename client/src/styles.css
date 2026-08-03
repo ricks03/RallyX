@@ -1,0 +1,300 @@
+/*
+ * RoboRally client - visual system
+ *
+ * Direction: the painted concrete of a factory floor. RoboRally boards are
+ * pale grey plate with markings painted straight onto them, so the
+ * interface is built from the same materials rather than sitting in a
+ * generic dark game shell: concrete ground, painted line markings,
+ * stencilled signage type.
+ *
+ * The one bold device is the hazard stripe. It appears where something is
+ * genuinely hazardous or decisive, never as ornament.
+ */
+
+:root {
+  /* Painted concrete */
+  --floor:       #c9cbc4;
+  --floor-lit:   #dcded7;
+  --floor-deep:  #adb1a8;
+  --floor-shade: #8f948b;
+
+  /* Marking paint, worn */
+  --ink:         #1c201e;
+  --ink-soft:    #454b47;
+  --paint-yellow:#e3b23c;
+  --paint-red:   #b8443a;
+  --paint-blue:  #35657f;
+
+  --edge: 1px solid var(--floor-shade);
+
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --step-1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1up: 1.125rem;
+  --step-2: 1.5rem;
+  --step-3: 2.25rem;
+  --step-4: 3.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  color: var(--ink);
+  background-color: var(--floor);
+  /* Concrete: a faint mottling, not a texture image. */
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.35) 0%, transparent 45%),
+    radial-gradient(circle at 75% 65%, rgba(0,0,0,0.05) 0%, transparent 40%);
+}
+
+/* The signature: hazard striping. */
+.hazard {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--paint-yellow) 0 12px,
+    var(--ink) 12px 24px
+  );
+}
+.hazard-thin { height: 6px; }
+.hazard-rule { height: 10px; width: 100%; }
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 0.95;
+}
+
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* A plate is anything laid on the floor: a panel, a card, a row. */
+.plate {
+  background: var(--floor-lit);
+  border: var(--edge);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset,
+              0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ---------- Controls ---------- */
+
+button, .button {
+  font-family: var(--font-display);
+  font-size: var(--step-1up);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--floor-lit);
+  background: var(--ink);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  transition: transform 90ms ease, background-color 120ms ease;
+}
+button:hover:not(:disabled) { background: var(--paint-blue); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:disabled { background: var(--floor-shade); cursor: not-allowed; }
+
+button.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+button.secondary:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--floor-lit);
+}
+
+button.danger { background: var(--paint-red); }
+
+input {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  color: var(--ink);
+  background: var(--floor-lit);
+  border: var(--edge);
+  border-bottom: 2px solid var(--ink-soft);
+  padding: 0.55rem 0.7rem;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border-bottom-color: var(--paint-blue);
+  background: #fff;
+}
+
+label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.35rem;
+}
+
+/* Keyboard users must be able to see where they are. */
+:focus-visible {
+  outline: 3px solid var(--paint-yellow);
+  outline-offset: 2px;
+}
+
+a { color: var(--paint-blue); }
+
+/* ---------- Layout ---------- */
+
+.shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: var(--edge);
+  background: var(--floor-lit);
+  flex-wrap: wrap;
+}
+
+.masthead .wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--step-2);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.content {
+  flex: 1;
+  width: min(64rem, 100%);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.stack { display: grid; gap: 1rem; }
+.row { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+.spread { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+
+.notice {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  padding: 0.6rem 0.8rem;
+  border-left: 4px solid var(--paint-red);
+  background: rgba(184, 68, 58, 0.09);
+}
+.notice.ok { border-left-color: var(--paint-blue); background: rgba(53,101,127,0.09); }
+
+.muted { color: var(--ink-soft); }
+.mono { font-family: var(--font-mono); }
+.num {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Sign-in ---------- */
+
+.gate {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.gate-panel {
+  width: min(26rem, 100%);
+  overflow: hidden;
+}
+
+.gate-body { padding: 1.75rem; display: grid; gap: 1.1rem; }
+
+.gate-title {
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 800;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+/* ---------- Lobby ---------- */
+
+.game-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+  width: 100%;
+  background: var(--floor-lit);
+  border: var(--edge);
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  cursor: pointer;
+}
+.game-row:hover { background: #fff; }
+
+/* Bay numbers are stamped plate, not decoration: the number is the seat. */
+.bay {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: var(--step-1up);
+  min-width: 2.75rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  color: var(--floor-lit);
+  background: var(--ink);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid currentColor;
+}
+.tag.lobby { color: var(--paint-blue); }
+.tag.active { color: var(--paint-red); }
+
+.empty {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border: 2px dashed var(--floor-shade);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+@media (max-width: 40rem) {
+  :root { --step-4: 2.5rem; --step-3: 1.75rem; }
+  .game-row { grid-template-columns: auto 1fr; }
+}

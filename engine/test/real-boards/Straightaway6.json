@@ -1,0 +1,2167 @@
+{
+   "cells" : [
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "E",
+               "express" : true,
+               "rotates" : {
+                  "N" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "W" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "levels" : 2
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2,
+                  3
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none",
+                  "W" : "CW"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "spikes" : true
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  3
+               ]
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2,
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1,
+                  5
+               ]
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "spikes" : true
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  5
+               ]
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "spikes" : true
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "chopShop" : true,
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  4,
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  3,
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "W"
+            }
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  3
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2,
+                  3
+               ]
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall",
+                     "spikes" : true
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  2
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1,
+                  2
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "crusher" : {
+               "phases" : [
+                  1
+               ]
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall",
+                     "spikes" : true
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "E",
+               "express" : true,
+               "rotates" : {
+                  "N" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : true,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ]
+   ],
+   "height" : 12,
+   "name" : "Straightaway6",
+   "width" : 12
+}
