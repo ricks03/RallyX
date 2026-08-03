@@ -1,0 +1,1304 @@
+# Tile semantics table for the RoboRally TMX parser.
+#
+# Keyed by tileset name (the `name` attribute in the .tsx), then tile id.
+# Tile ids are row-major, zero-indexed: id = row * columns + col
+#
+# `kind` values the parser understands:
+#   floor        plain floor plate
+#   conveyor     + express: bool, + exit: dir, + entries: [dir,..]
+#   gear         + rotation: CW | CCW
+#   repair       + wrenches: 1 | 2, + hammer: bool
+#   wall         + edge: dir   (edge feature)
+#   pit          instant destruction
+#   trapDoorPit  pit only on the phases collected from digit overlays
+#   pusher       + edge: dir, + phases: [..] baked in, or [] if digits layered
+#   phaseDigit   + digit: N   overlay contributing a phase number
+#   cliff        + edge: dir, + drop: in|out, + ramp: bool, + steep: bool
+#                one-way elevation edge; drop says which side is high
+#   steepMarker  + edge: dir   overlay making the ramp on that edge steep
+#   repulsor     + edge: dir   edge feature that shoves robots back
+#   ignore       decorative, no game meaning
+#
+# Directions are given for the tile as it sits in the sheet, UNROTATED.
+# Tiled's flip flags are applied to them at parse time, which covers all
+# eight orientations including mirrors.
+#
+# Anything not listed here makes the parser stop and name the tile.
+# That is deliberate: an unknown tile is a bug, not a default.
+
+"05 Board":
+  file: 05 Board.tsx
+  1:  { kind: floor }
+  0:  { kind: floor }
+  2:  { kind: floor }
+  3:  { kind: floor }
+  4:  { kind: floor }
+  5:  { kind: floor }
+  6:  { kind: floor }
+  7:  { kind: floor }
+  8:  { kind: floor }
+  9:  { kind: floor }
+  10: { kind: floor }
+  11: { kind: floor }
+
+"16 Board":
+  file: 16 Board.tsx
+  11: { kind: floor }
+  0:  { kind: floor }
+  1:  { kind: floor }
+  2:  { kind: floor }
+  3:  { kind: floor }
+  4:  { kind: floor }
+  5:  { kind: floor }
+  6:  { kind: floor }
+  7:  { kind: floor }
+  8:  { kind: floor }
+  9:  { kind: floor }
+  10: { kind: floor }
+
+"05A":
+  file: 05A.tsx
+  # straight belts: enter from the south edge, exit north
+  0:  { kind: conveyor, express: false, exit: N, entries: [S] }
+  1:  { kind: conveyor, express: true,  exit: N, entries: [S] }
+  # curves: enter from the north or east edge, exit south
+  14: { kind: conveyor, express: false, exit: S, entries: [N, E] }
+  15: { kind: conveyor, express: true,  exit: S, entries: [N, E] }
+  # two-edge curves: enter from the south, exit sideways
+  7:  { kind: conveyor, express: false, exit: W, entries: [S] }
+  8:  { kind: conveyor, express: true,  exit: E, entries: [S] }
+  2:  { kind: gear, rotation: CW }         # green arrows
+  9:  { kind: gear, rotation: CCW }        # red arrows
+  10: { kind: repair, wrenches: 1, hammer: true }   # wrench + hammer
+  3:  { kind: repair, wrenches: 1 }                 # wrench only
+  # emitters on the west edge; the wall itself is placed separately
+  4:  { kind: laser, edge: W, count: 1 }
+  5:  { kind: laser, edge: W, count: 2 }
+  6:  { kind: laser, edge: W, count: 3 }
+  16: { kind: pusher, edge: W, phases: [1, 3, 5] }
+  11: { kind: repair, wrenches: 1, hammer: true }
+  12: { kind: laserBeam, along: E, count: 1 }
+  13: { kind: laserBeam, along: E, count: 2 }
+  23: { kind: pusher, edge: W, phases: [2, 4] }
+  24: { kind: startPosition, number: 1 }
+  25: { kind: startPosition, number: 2 }
+  26: { kind: startPosition, number: 3 }
+  27: { kind: startPosition, number: 4 }
+  31: { kind: startPosition, number: 5 }
+  32: { kind: startPosition, number: 6 }
+  33: { kind: startPosition, number: 7 }
+  34: { kind: startPosition, number: 8 }
+  30: { kind: pit }
+  # three-edge belts
+  21: { kind: conveyor, express: false, exit: W, entries: [N, S] }
+  22: { kind: conveyor, express: true,  exit: E, entries: [N, S] }
+  # blank cells in the sheet
+  17: { kind: ignore }
+  18: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  28: { kind: wall, edge: W }
+  29:
+    - { kind: wall, edge: W }
+    - { kind: wall, edge: S }
+
+"05 Pits":
+  file: 05 Pits.tsx
+  # 7x4 sheet. The first three rows are all pit spaces; row 3 is empty.
+  0:  { kind: pit }
+  1:  { kind: pit }
+  2:  { kind: pit }
+  3:  { kind: pit }
+  4:  { kind: pit }
+  5:  { kind: pit }
+  6:  { kind: pit }
+  7:  { kind: pit }
+  8:  { kind: pit }
+  9:  { kind: pit }
+  10: { kind: pit }
+  11: { kind: pit }
+  12: { kind: pit }
+  13: { kind: pit }
+  14: { kind: pit }
+  15: { kind: pit }
+  16: { kind: pit }
+  17: { kind: pit }
+  18: { kind: pit }
+  19: { kind: pit }
+  20: { kind: pit }
+  21: { kind: ignore }
+  22: { kind: ignore }
+  23: { kind: ignore }
+  24: { kind: ignore }
+  25: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+
+"05B":
+  file: 05B.tsx
+  # 6x5 sheet. Column 0 is pushers, columns 1 and 3 are west-edge laser
+  # emitters with 1/2/3 beams; columns 2, 4 and 5 are empty.
+  0:  { kind: pusher, edge: W, phases: [1, 3, 5] }
+  6:  { kind: pusher, edge: W, phases: [2, 4] }
+  12: { kind: pusher, edge: W, phases: [1, 3, 5] }
+  18: { kind: pusher, edge: W, phases: [2, 4] }
+  1:  { kind: laser, edge: W, count: 1 }
+  7:  { kind: laser, edge: W, count: 2 }
+  13: { kind: laser, edge: W, count: 3 }
+  3:  { kind: laser, edge: W, count: 1 }
+  9:  { kind: laser, edge: W, count: 2 }
+  15: { kind: laser, edge: W, count: 3 }
+  24: { kind: wall, edge: E }
+  25: { kind: wall, edge: W }
+  2:  { kind: ignore }
+  4:  { kind: ignore }
+  5:  { kind: ignore }
+  8:  { kind: ignore }
+  10: { kind: ignore }
+  11: { kind: ignore }
+  14: { kind: ignore }
+  16: { kind: ignore }
+  17: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  21: { kind: ignore }
+  22: { kind: ignore }
+  23: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+  28: { kind: ignore }
+  29: { kind: ignore }
+
+"Fields":
+  file: Fields.tsx
+  # 7x5 = 35 tiles. Row 0 is repulsors and lasers, row 1 plain walls.
+  # Rows 2-4 are the one-way walls and spiked walls, not yet recorded.
+  0:
+    - { kind: repulsor, edge: W }
+    - { kind: repulsor, edge: S }
+  1:  { kind: repulsor, edge: S }
+  2:  { kind: repulsor, edge: S }
+  # two beams crossing the cell north to south, no emitter drawn
+  3:  { kind: laserBeam, along: S, count: 2 }
+  4:  { kind: laserBeam, along: S, count: 2 }
+  7:  { kind: wall, edge: W }
+  8:
+    - { kind: wall, edge: W }
+    - { kind: wall, edge: S }
+  9:  { kind: wall, edge: W }
+  # columns 5 and 6 carry nothing, nor does c3 r1
+  10: { kind: ignore }
+  # row 2 red one-way walls, row 3 green: a robot may cross a red wall only
+  # if it came through the matching green wall in the adjacent cell
+  14:
+    - { kind: wall, edge: W, oneWay: red }
+    - { kind: wall, edge: S, oneWay: red }
+  15: { kind: wall, edge: S, oneWay: red }
+  16: { kind: wall, edge: S, oneWay: red }
+  17: { kind: wall, edge: S, oneWay: red }
+  18: { kind: wall, edge: S, oneWay: red }
+  21:
+    - { kind: wall, edge: W, oneWay: green }
+    - { kind: wall, edge: S, oneWay: green }
+  22: { kind: wall, edge: S, oneWay: green }
+  23: { kind: wall, edge: S, oneWay: green }
+  24: { kind: wall, edge: S, oneWay: green }
+  25: { kind: wall, edge: S, oneWay: green }
+  # spiked west walls
+  28: { kind: wall, edge: W, spikes: true }
+  29: { kind: wall, edge: W, spikes: true }
+  30: { kind: wall, edge: W, spikes: true }
+  11: { kind: ignore }
+  31: { kind: ignore }
+  32: { kind: ignore }
+  5:  { kind: ignore }
+  6:  { kind: ignore }
+  12: { kind: ignore }
+  13: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+  33: { kind: ignore }
+  34: { kind: ignore }
+
+"Crushers":
+  file: Crushers.tsx
+  # 7x7 = 49 tiles, declaration accurate. Column 0 rows 0-5 are crushers,
+  # each pre-composited over a belt except the blank one at 35. The orange
+  # register digits are layered on separately and appear twice, on rows 0
+  # and 1, at columns 1-5.
+  0:
+    - { kind: crusher }
+    - { kind: conveyor, express: false, exit: E, entries: [W] }
+  7:
+    - { kind: crusher }
+    - { kind: conveyor, express: false, exit: E, entries: [N, W] }
+  14:
+    - { kind: crusher }
+    - { kind: conveyor, express: true, exit: E, entries: [W] }
+  21:
+    - { kind: crusher }
+    - { kind: conveyor, express: true, exit: E, entries: [N, W] }
+  28:
+    - { kind: crusher }
+    - { kind: conveyor, express: true, exit: E, entries: [W, N, S] }
+  # bare crusher, digits layered on top
+  35: { kind: crusher }
+  # two identical sets of register digits
+  1:  { kind: phaseDigit, digit: 1, for: crusher }
+  2:  { kind: phaseDigit, digit: 2, for: crusher }
+  3:  { kind: phaseDigit, digit: 3, for: crusher }
+  4:  { kind: phaseDigit, digit: 4, for: crusher }
+  5:  { kind: phaseDigit, digit: 5, for: crusher }
+  8:  { kind: phaseDigit, digit: 1, for: crusher }
+  9:  { kind: phaseDigit, digit: 2, for: crusher }
+  10: { kind: phaseDigit, digit: 3, for: crusher }
+  11: { kind: phaseDigit, digit: 4, for: crusher }
+  12: { kind: phaseDigit, digit: 5, for: crusher }
+  # column 6, row 6, and columns 1-5 of rows 2-5 are all empty
+  6:  { kind: ignore }
+  13: { kind: ignore }
+  15: { kind: ignore }
+  16: { kind: ignore }
+  17: { kind: ignore }
+  18: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  22: { kind: ignore }
+  23: { kind: ignore }
+  24: { kind: ignore }
+  25: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+  29: { kind: ignore }
+  30: { kind: ignore }
+  31: { kind: ignore }
+  32: { kind: ignore }
+  33: { kind: ignore }
+  34: { kind: ignore }
+  36: { kind: ignore }
+  37: { kind: ignore }
+  38: { kind: ignore }
+  39: { kind: ignore }
+  40: { kind: ignore }
+  41: { kind: ignore }
+  42: { kind: ignore }
+  43: { kind: ignore }
+  44: { kind: ignore }
+  45: { kind: ignore }
+  46: { kind: ignore }
+  47: { kind: ignore }
+  48: { kind: ignore }
+"16a":
+  file: 16a.tsx
+  # belts: normal in column 0, express in column 1
+  0:  { kind: conveyor, express: false, exit: N, entries: [S] }
+  7:  { kind: conveyor, express: false, exit: W, entries: [S] }
+  14: { kind: conveyor, express: false, exit: S, entries: [N, E] }
+  21: { kind: conveyor, express: false, exit: W, entries: [N, S] }
+  1:  { kind: conveyor, express: true,  exit: N, entries: [S] }
+  8:  { kind: conveyor, express: true,  exit: E, entries: [S] }
+  15: { kind: conveyor, express: true,  exit: S, entries: [N, E] }
+  22: { kind: conveyor, express: true,  exit: E, entries: [N, S] }
+  2:  { kind: gear, rotation: CW }
+  9:  { kind: gear, rotation: CCW }
+  16: { kind: pusher, edge: W, phases: [1, 3, 5] }
+  23: { kind: pusher, edge: W, phases: [2, 4] }
+  3:  { kind: generator, colour: red }
+  10: { kind: generator, colour: green }
+  # emitters on the west edge, 1/2/3 beams
+  4:  { kind: laser, edge: W, count: 1 }
+  5:  { kind: laser, edge: W, count: 2 }
+  6:  { kind: laser, edge: W, count: 3 }
+  # beams crossing the cell with no emitter
+  11: { kind: laserBeam, along: E, count: 1 }
+  12: { kind: laserBeam, along: E, count: 2 }
+  13: { kind: laserBeam, along: E, count: 3 }
+  # the same beams again, drawn stopping short of the east edge
+  18: { kind: laserBeam, along: E, count: 1 }
+  19: { kind: laserBeam, along: E, count: 2 }
+  20: { kind: laserBeam, along: E, count: 3 }
+  17: { kind: ignore }
+  28: { kind: wall, edge: W }
+  29:
+    - { kind: wall, edge: W }
+    - { kind: wall, edge: S }
+  30: { kind: pit }
+  24: { kind: startPosition, number: 1 }
+  25: { kind: startPosition, number: 2 }
+  26: { kind: startPosition, number: 3 }
+  27: { kind: startPosition, number: 4 }
+  31: { kind: startPosition, number: 5 }
+  32: { kind: startPosition, number: 6 }
+  33: { kind: startPosition, number: 7 }
+  34: { kind: startPosition, number: 8 }
+
+"Floor Elements":
+  file: Floor Elements.tsx
+  # Repair sites. EVERY repair space archives the robot each register; the
+  # icon says what else it does:
+  #   one wrench          heals 1
+  #   two wrenches        heals 2 OR grants an option/upgrade on register 5
+  #   wrench and hammer   heals 1 AND grants an option/upgrade at the end of
+  #                       register 5
+  # So `hammer: true` is what separates the third from the first, not the
+  # wrench count - it heals the same 1.
+  # All three are on this sheet: 0, 2 and 1 in that order.
+  0:  { kind: repair, wrenches: 1 }
+  2:  { kind: repair, wrenches: 2 }
+  1:  { kind: repair, wrenches: 1, hammer: true }
+  # Chop shop. Each register it either swaps an option/upgrade for a random
+  # one or reloads one, and on register 5 it grants a new option/upgrade.
+  3:  { kind: chopShop }
+  # A teleporter is its own element, not a portal, and it sits ON a floor
+  # space rather than being one. It boosts movement rather than relocating a
+  # robot: one executing a move card (not Rotate, not U-Turn) on a teleporter
+  # moves forward 2 plus the forward movement on the card, provided the
+  # movement is not affected by an option and the destination is unoccupied.
+  # Nothing pairs, so the tile carries no fields.
+  4:  { kind: teleporter }
+  5:  { kind: ignore }
+  # Starting markers for positions 1-8. Robots may be placed on them at the
+  # start of a game; they have no other effect, so they ride on the cell
+  # rather than being its floor.
+  6:  { kind: startPosition, number: 1 }
+  7:  { kind: startPosition, number: 2 }
+  8:  { kind: startPosition, number: 3 }
+  9:  { kind: startPosition, number: 4 }
+  12: { kind: startPosition, number: 5 }
+  13: { kind: startPosition, number: 6 }
+  14: { kind: startPosition, number: 7 }
+  15: { kind: startPosition, number: 8 }
+  # A robot beginning a register on a randomizer draws a random card from the
+  # deck and executes it instead of whatever it programmed for that register.
+  16: { kind: randomizer }
+  # art with no game effect
+  10: { kind: ignore }
+  11: { kind: ignore }
+  17: { kind: ignore }
+  18: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  21: { kind: ignore }
+  22: { kind: ignore }
+  # a timed pit: open only on the registers collected from the digits below
+  23: { kind: trapDoorPit }
+  24: { kind: phaseDigit, digit: 1, for: trapDoorPit }
+  25: { kind: phaseDigit, digit: 2, for: trapDoorPit }
+  26: { kind: phaseDigit, digit: 3, for: trapDoorPit }
+  27: { kind: phaseDigit, digit: 2, for: trapDoorPit }   # duplicate of 25
+  28: { kind: phaseDigit, digit: 4, for: trapDoorPit }
+  29: { kind: phaseDigit, digit: 5, for: trapDoorPit }
+
+"RallyXA":
+  file: RallyXA.tsx
+  # column 0 normal belts, column 1 express
+  0:  { kind: conveyor, express: false, exit: N, entries: [S] }
+  7:  { kind: conveyor, express: false, exit: W, entries: [S] }
+  14: { kind: conveyor, express: false, exit: S, entries: [N, E] }
+  21: { kind: conveyor, express: false, exit: W, entries: [N, S] }
+  1:  { kind: conveyor, express: true,  exit: N, entries: [S] }
+  8:  { kind: conveyor, express: true,  exit: E, entries: [S] }
+  15: { kind: conveyor, express: true,  exit: S, entries: [N, E] }
+  22: { kind: conveyor, express: true,  exit: W, entries: [N, S] }
+  # further express pieces scattered across the sheet
+  18: { kind: conveyor, express: true,  exit: E, entries: [S] }
+  24: { kind: conveyor, express: true,  exit: S, entries: [N, E] }
+  25: { kind: conveyor, express: true,  exit: S, entries: [N, E] }
+  31: { kind: conveyor, express: true,  exit: E, entries: [S] }
+  # gears, three of each
+  2:  { kind: gear, rotation: CW }
+  3:  { kind: gear, rotation: CW }
+  4:  { kind: gear, rotation: CW }
+  9:  { kind: gear, rotation: CCW }
+  10: { kind: gear, rotation: CCW }
+  11: { kind: gear, rotation: CCW }
+  # pre-composited pushers
+  16: { kind: pusher, edge: W, phases: [1, 3, 5] }
+  23: { kind: pusher, edge: W, phases: [2, 4] }
+  # bare pusher with the digits layered on separately
+  42: { kind: pusher, edge: W, phases: [] }
+  43: { kind: phaseDigit, digit: 1, for: pusher }
+  44: { kind: phaseDigit, digit: 2, for: pusher }
+  45: { kind: phaseDigit, digit: 3, for: pusher }
+  46: { kind: phaseDigit, digit: 4, for: pusher }
+  47: { kind: phaseDigit, digit: 5, for: pusher }
+  28: { kind: floor }
+  29: { kind: floor }
+  32: { kind: floor }
+  34: { kind: floor }
+  # everything else on the sheet has no game meaning
+  5: { kind: ignore }
+  6:  { kind: stuntRamp, entry: S, exit: N }
+  12: { kind: ignore }
+  13: { kind: ignore }
+  17: { kind: ignore }
+  19: { kind: ignore }
+  20: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+  30: { kind: ignore }
+  33: { kind: ignore }
+  35: { kind: ignore }
+  36: { kind: ignore }
+  37: { kind: ignore }
+  38: { kind: ignore }
+  39: { kind: ignore }
+  40: { kind: ignore }
+  41: { kind: ignore }
+  48: { kind: ignore }
+
+"Portals":
+  file: Portals.tsx
+  # Portals pair by colour: exactly two of each colour per course, never more.
+  # Colour names confirmed correct.
+  0:  { kind: portal, colour: black }
+  1:  { kind: portal, colour: blue }
+  2:  { kind: portal, colour: darkred }
+  3:  { kind: portal, colour: teal }
+  4:  { kind: portal, colour: green }
+  5:  { kind: portal, colour: silver }
+  6:  { kind: portal, colour: orange }
+  7:  { kind: portal, colour: magenta }
+  8:  { kind: portal, colour: purple }
+  9:  { kind: portal, colour: red }
+  10: { kind: portal, colour: yellow }
+  11: { kind: portal, colour: lavender }
+
+"Oil & Goo":
+  file: Oil & Goo.tsx
+  # Every black shape is oil slick; the many outlines are for tiling across
+  # adjacent cells and carry no meaning.
+  #
+  # Oil slick, per the Board Elements reference: a robot that tries to END its
+  # movement on oil keeps sliding the way it was going until a wall or a robot
+  # not on oil stops it, or until it is off the oil; sliding into a robot that
+  # is itself on oil slides them both. A robot still mid-move behaves normally.
+  # A robot that BEGINS its movement on oil loses the first square of it.
+  # Rotate cards are unaffected.
+  0:  { kind: oil }
+  1:  { kind: oil }
+  2:  { kind: oil }
+  3:  { kind: oil }
+  4:  { kind: oil }
+  5:  { kind: oil }
+  7:  { kind: oil }
+  8:  { kind: oil }
+  9:  { kind: oil }
+  10: { kind: oil }
+  11: { kind: oil }
+  12: { kind: oil }
+  14: { kind: oil }
+  15: { kind: oil }
+  16: { kind: oil }
+  17: { kind: oil }
+  18: { kind: oil }
+  21: { kind: oil }
+  22: { kind: oil }
+  23: { kind: oil }
+  24: { kind: oil }
+  25: { kind: oil }
+  28: { kind: oil }
+  29: { kind: oil }
+  30: { kind: oil }
+  31: { kind: oil }
+  # Goo behaves as slime, so it is recorded as slime rather than as a kind of
+  # its own. Slime: a robot starting its move on one ignores Rotate, U-Turn,
+  # Back-Up and Move 1, discarding the card without moving; only a Move 2 or
+  # Move 3 gets it off, though it can still be pushed off.
+  6:  { kind: slime }
+  13: { kind: slime }
+  20: { kind: slime }
+  27: { kind: slime }
+  34: { kind: slime }
+  # 19, 26 are ~1% coverage - UNCONFIRMED, assumed stray fragments
+  19: { kind: ignore }
+  26: { kind: ignore }
+  # Repulsor field on the west edge, plus two lasers emitted from that edge
+  # and crossing the cell eastward.
+  #
+  # Repulsor field, per the Board Elements reference: a robot that RUNS INTO
+  # the field is shoved directly away from it by as many squares as its
+  # movement card, and loses whatever movement was left on that card. A robot
+  # PUSHED into the field by another robot is shoved away by the pushing
+  # robot's card instead, and it is the pusher that loses its remaining
+  # movement. Robots being shoved by a repulsor can push others along. Nothing
+  # else triggers it: only running into a field, or being pushed into one.
+  # Resolved during Robots Move.
+  32:
+    - { kind: repulsor, edge: W }
+    - { kind: laser, edge: W, count: 2 }
+  # two lasers crossing east-west with no emitter in this cell
+  33: { kind: laserBeam, along: E, count: 2 }
+
+"Crushers/Flamers":
+  file: Crushers & Flamers300.tsx
+  # Orange and green flamers are separate items with the same effect, so they
+  # share the `flamer` kind and are told apart by `colour`. The engine can
+  # treat them identically and still know which is which.
+  # 0 is a self-contained single flame space with a wall on its south edge.
+  # 7 is a flame space with no wall, meant to connect southward.
+  # 14 carries the south wall and connects to flames to its north.
+  0:
+    - { kind: flamer, colour: orange }
+    - { kind: wall, edge: S }
+  7:  { kind: flamer, colour: orange }
+  14:
+    - { kind: flamer, colour: orange }
+    - { kind: wall, edge: S }
+  6:  { kind: flamer, colour: green }
+  13: { kind: flamer, colour: green }
+  20: { kind: flamer, colour: green }
+  # yellow digits, three positional sets matching the three flamer variants
+  1:  { kind: phaseDigit, digit: 1, for: flamer }
+  2:  { kind: phaseDigit, digit: 2, for: flamer }
+  3:  { kind: phaseDigit, digit: 3, for: flamer }
+  4:  { kind: phaseDigit, digit: 4, for: flamer }
+  5:  { kind: phaseDigit, digit: 5, for: flamer }
+  8:  { kind: phaseDigit, digit: 1, for: flamer }
+  9:  { kind: phaseDigit, digit: 2, for: flamer }
+  10: { kind: phaseDigit, digit: 3, for: flamer }
+  11: { kind: phaseDigit, digit: 4, for: flamer }
+  12: { kind: phaseDigit, digit: 5, for: flamer }
+  15: { kind: phaseDigit, digit: 1, for: flamer }
+  16: { kind: phaseDigit, digit: 2, for: flamer }
+  17: { kind: phaseDigit, digit: 3, for: flamer }
+  18: { kind: phaseDigit, digit: 4, for: flamer }
+  19: { kind: phaseDigit, digit: 5, for: flamer }
+  # crushers. 22, 28 and 29 are composite: a crusher sitting on a conveyor,
+  # so the entry lists a crusher AND a conveyor for the same tile.
+  21: { kind: crusher }
+  22:
+    - { kind: crusher }
+    - { kind: conveyor, express: true,  exit: E, entries: [W] }
+  28:
+    - { kind: crusher }
+    - { kind: conveyor, express: false, exit: E, entries: [W] }
+  29:
+    - { kind: crusher }
+    - { kind: conveyor, express: true,  exit: E, entries: [W, N] }
+  # orange digits, two positional sets, these belong to the crushers
+  23: { kind: phaseDigit, digit: 1, for: crusher }
+  24: { kind: phaseDigit, digit: 2, for: crusher }
+  25: { kind: phaseDigit, digit: 3, for: crusher }
+  26: { kind: phaseDigit, digit: 4, for: crusher }
+  27: { kind: phaseDigit, digit: 5, for: crusher }
+  30: { kind: phaseDigit, digit: 1, for: crusher }
+  31: { kind: phaseDigit, digit: 2, for: crusher }
+  32: { kind: phaseDigit, digit: 3, for: crusher }
+  33: { kind: phaseDigit, digit: 4, for: crusher }
+  34: { kind: phaseDigit, digit: 5, for: crusher }
+
+"16b":
+  file: 16b.tsx
+  # Lasers: every emitter sits on the west edge and fires east, open on the
+  # right. Row 0 is one beam, row 1 two, row 2 three. The five columns differ
+  # only in drawn beam length, so they are semantically identical - the engine
+  # traces the real extent from the emitter.
+  1:  { kind: laser, edge: W, count: 1 }
+  2:  { kind: laser, edge: W, count: 1 }
+  3:  { kind: laser, edge: W, count: 1 }
+  4:  { kind: laser, edge: W, count: 1 }
+  5:  { kind: laser, edge: W, count: 1 }
+  8:  { kind: laser, edge: W, count: 2 }
+  9:  { kind: laser, edge: W, count: 2 }
+  10: { kind: laser, edge: W, count: 2 }
+  11: { kind: laser, edge: W, count: 2 }
+  12: { kind: laser, edge: W, count: 2 }
+  15: { kind: laser, edge: W, count: 3 }
+  16: { kind: laser, edge: W, count: 3 }
+  17: { kind: laser, edge: W, count: 3 }
+  18: { kind: laser, edge: W, count: 3 }
+  19: { kind: laser, edge: W, count: 3 }
+  # Pushers. Column 0 sits against a wall on its west edge; the pair at the
+  # foot of the sheet sits against a wall on its north edge.
+  0:  { kind: pusher, edge: W, phases: [1, 3, 5] }
+  14: { kind: pusher, edge: W, phases: [1, 3, 5] }
+  7:  { kind: pusher, edge: W, phases: [2, 4] }
+  21: { kind: pusher, edge: W, phases: [2, 4] }
+  32: { kind: pusher, edge: N, phases: [1, 3, 5] }
+  33: { kind: pusher, edge: N, phases: [2, 4] }
+  # wall bars
+  28: { kind: wall, edge: E }
+  29: { kind: wall, edge: W }
+  31: { kind: wall, edge: E }
+  20: { kind: ignore }
+  25: { kind: ignore }
+  26: { kind: ignore }
+  # (26 confirmed blank)
+  # note - it has nearly identical coverage to 25 and is
+  # probably blank too, but that is a guess. Leaving it unmapped means any
+  # board that places it stops the parser instead of silently dropping it.
+  # column 6, the middle of row 3, and the gap between the row 4 walls are blank
+  6:  { kind: ignore }
+  13: { kind: ignore }
+  22: { kind: ignore }
+  23: { kind: ignore }
+  24: { kind: ignore }
+  27: { kind: ignore }
+  30: { kind: ignore }
+  34: { kind: ignore }
+
+"Radiation2":
+  file: Radiation2.tsx
+  # Conveyors running across radioactive ground: each tile is both. Directions
+  # are for the unrotated tile - left is W, right E, top N, bottom S.
+  0:
+    - { kind: conveyor, express: false, exit: E, entries: [W] }
+    - { kind: radioactiveWaste }
+  4:
+    - { kind: conveyor, express: false, exit: E, entries: [W] }
+    - { kind: radioactiveWaste }
+  3:
+    - { kind: conveyor, express: false, exit: S, entries: [W] }
+    - { kind: radioactiveWaste }
+  5:
+    - { kind: conveyor, express: false, exit: S, entries: [W, N] }
+    - { kind: radioactiveWaste }
+  11:
+    - { kind: conveyor, express: false, exit: S, entries: [W, E] }
+    - { kind: radioactiveWaste }
+  1:  { kind: radioactiveWaste }      # ground with no conveyor
+  2:  { kind: pit }                   # functionally a pit
+  6:  { kind: radiation }             # radiation, not waste
+  # 7-10 are solid white filler, not keyed magenta
+  7:  { kind: ignore }
+  8:  { kind: ignore }
+  9:  { kind: ignore }
+  10: { kind: ignore }
+
+"RallyX":
+  file: RallyX.tsx
+  # Ground hazards
+  0:  { kind: smoke }        # blocks laser fire; sits over the floor
+  1:  { kind: spikes }       # 1 damage on entering, or on rotating in place
+  3:  { kind: spikes }       # spiked floor, same effect as 1
+  2:  { kind: speedBump }    # 1 damage when entered on a Move 2 or Move 3
+  5:  { kind: flamingOil }   # flamethrower and oil slick combined
+  8:  { kind: oil }
+  # Service squares. Engine rules, recorded here only as identity:
+  #  pitStop  - ending a register phase on one removes 1 damage and discards
+  #             the next register's programmed cards and tokens; the robot is
+  #             wholly inactive that next phase even if it has moved off.
+  #             No effect on register 5.
+  #  restStop - ending a register phase on one having executed neither a Move
+  #             nor a Back-Up removes 1 damage.
+  6:  { kind: pitStop }
+  10: { kind: restStop }
+  # Stunt ramps: enter at the bottom, leave at the top. Unlike a normal ramp,
+  # which consumes a move, these ADD one move on exit.
+  7:  { kind: stuntRamp, entry: S, exit: N }
+  11: { kind: stuntRamp, entry: S, exit: N }
+  # Walls. Spikes always face into the cell - a west wall's spikes point east,
+  # a south wall's point north - so the direction is derived, not stored.
+  # A spiked wall damages anything moved, slid or pushed into it.
+  9:  { kind: wall, edge: W, spikes: true }
+  12: { kind: wall, edge: W, spikes: true }   # same as 9
+  15: { kind: wall, edge: W }                 # no spikes
+  13:
+    - { kind: wall, edge: W, spikes: true }
+    - { kind: wall, edge: S, spikes: true }
+  14:
+    - { kind: wall, edge: W }                 # plain
+    - { kind: wall, edge: S, spikes: true }
+  # Slime. Hinders movement: a robot starting its move on slime ignores
+  # Rotate Left/Right, U-Turn, Back-Up and Move 1 - the card is discarded and
+  # the robot does not move. Only Move 2 or Move 3 gets it off. It can still
+  # be pushed off. Resolved in the Robots Move segment at the priority of the
+  # movement card.
+  4:  { kind: slime }
+
+"Bollards":
+  file: Bollards.tsx
+  # A bollard is a timed wall: a wall on its listed registers, open floor on
+  # every other one. Column position in the sheet gives the edge, row gives
+  # the digit. A centred bar blocks one axis, so it is recorded as bollards
+  # on both perpendicular edges - placing a centred horizontal AND a centred
+  # vertical seals the cell completely, walls on all four sides.
+  #
+  # Tiles 0-5 carry all five numbers as reference art only; their real
+  # registers come from the marker tiles layered on top, same as 6, 13, 20.
+  0:
+    - { kind: bollard, edge: N }
+    - { kind: bollard, edge: S }   # centre-H
+  1:  { kind: bollard, edge: N }   # north
+  2:
+    - { kind: bollard, edge: E }
+    - { kind: bollard, edge: W }   # centre-V
+  3:  { kind: bollard, edge: S }   # south
+  4:  { kind: bollard, edge: W }   # west
+  5:  { kind: bollard, edge: E }   # east
+  # blanks awaiting layered numbers
+  6:
+    - { kind: bollard, edge: N }
+    - { kind: bollard, edge: S }   # centre-H, blank
+  13: { kind: bollard, edge: S }   # south, blank
+  20:
+    - { kind: bollard, edge: E }
+    - { kind: bollard, edge: W }   # centre-V, blank
+  # register markers: row = digit, column = edge
+  7 : { kind: phaseDigit, digit: 1, for: bollard, edges: [N, S] }  # centre-H
+  8 : { kind: phaseDigit, digit: 1, for: bollard, edges: [N, W] }  # north + west
+  9 : { kind: phaseDigit, digit: 1, for: bollard, edges: [E, W] }  # centre-V
+  10: { kind: phaseDigit, digit: 1, for: bollard, edges: [S] }  # south
+  11: { kind: phaseDigit, digit: 1, for: bollard, edges: [W] }  # west
+  12: { kind: phaseDigit, digit: 1, for: bollard, edges: [E] }  # east
+  14: { kind: phaseDigit, digit: 2, for: bollard, edges: [N, S] }  # centre-H
+  15: { kind: phaseDigit, digit: 2, for: bollard, edges: [N] }  # north
+  16: { kind: phaseDigit, digit: 2, for: bollard, edges: [E, W] }  # centre-V
+  17: { kind: phaseDigit, digit: 2, for: bollard, edges: [S] }  # south
+  18: { kind: phaseDigit, digit: 2, for: bollard, edges: [W] }  # west
+  19: { kind: phaseDigit, digit: 2, for: bollard, edges: [E] }  # east
+  21: { kind: phaseDigit, digit: 3, for: bollard, edges: [N, S] }  # centre-H
+  22: { kind: phaseDigit, digit: 3, for: bollard, edges: [N] }  # north
+  23: { kind: phaseDigit, digit: 3, for: bollard, edges: [E, W] }  # centre-V
+  24: { kind: phaseDigit, digit: 3, for: bollard, edges: [S] }  # south
+  25: { kind: phaseDigit, digit: 3, for: bollard, edges: [W] }  # west
+  26: { kind: phaseDigit, digit: 3, for: bollard, edges: [E] }  # east
+  28: { kind: phaseDigit, digit: 4, for: bollard, edges: [N, S] }  # centre-H
+  29: { kind: phaseDigit, digit: 4, for: bollard, edges: [N] }  # north
+  30: { kind: phaseDigit, digit: 4, for: bollard, edges: [E, W] }  # centre-V
+  31: { kind: phaseDigit, digit: 4, for: bollard, edges: [S] }  # south
+  32: { kind: phaseDigit, digit: 4, for: bollard, edges: [W] }  # west
+  33: { kind: phaseDigit, digit: 4, for: bollard, edges: [E] }  # east
+  35: { kind: phaseDigit, digit: 5, for: bollard, edges: [N, S] }  # centre-H
+  36: { kind: phaseDigit, digit: 5, for: bollard, edges: [N] }  # north
+  37: { kind: phaseDigit, digit: 5, for: bollard, edges: [E, W] }  # centre-V
+  38: { kind: phaseDigit, digit: 5, for: bollard, edges: [S] }  # south
+  39: { kind: phaseDigit, digit: 5, for: bollard, edges: [W] }  # west
+  40: { kind: phaseDigit, digit: 5, for: bollard, edges: [E] }  # east
+  # column 6 of the last three rows carries nothing
+  27: { kind: ignore }
+  34: { kind: ignore }
+  41: { kind: ignore }
+
+"Open Floor":
+  file: Open Floor.tsx
+  # Plain floor plate textures. Decorative variation only, no game meaning.
+  # `floor` uses //= in apply(), so these never clobber an element placed on
+  # the same cell by another layer.
+  0:  { kind: floor }
+  1:  { kind: floor }
+  2:  { kind: floor }
+  3:  { kind: floor }
+  4:  { kind: floor }
+  5:  { kind: floor }
+  6:  { kind: floor }
+  7:  { kind: floor }
+  8:  { kind: floor }
+  9:  { kind: floor }
+  10: { kind: floor }
+  11: { kind: floor }
+  12: { kind: floor }
+  13: { kind: floor }
+  14: { kind: floor }
+  15: { kind: floor }
+  16: { kind: floor }
+  17: { kind: floor }
+  18: { kind: floor }
+  19: { kind: floor }
+  20: { kind: floor }
+  21: { kind: floor }
+  22: { kind: floor }
+  24: { kind: floor }
+  25: { kind: floor }
+  26: { kind: floor }
+  27: { kind: floor }
+  28: { kind: floor }
+  # 23 and 29 measured blank: 0% opaque, only faint edge bleed
+  23: { kind: ignore }
+  29: { kind: ignore }
+
+"Flaming Oil":
+  file: Flaming Oil.tsx
+  # Flamethrower and oil slick combined, the same element as RallyX tile 5.
+  # Every shape is the same thing; the outlines exist to tile across adjacent
+  # cells and carry no meaning.
+  0:  { kind: flamingOil }
+  1:  { kind: flamingOil }
+  2:  { kind: flamingOil }
+  3:  { kind: flamingOil }
+  4:  { kind: flamingOil }
+  5:  { kind: flamingOil }
+  6:  { kind: flamingOil }
+  7:  { kind: flamingOil }
+  8:  { kind: flamingOil }
+  9:  { kind: flamingOil }
+  10: { kind: flamingOil }
+  11: { kind: flamingOil }
+  12: { kind: flamingOil }
+  13: { kind: flamingOil }
+  14: { kind: flamingOil }
+  15: { kind: flamingOil }
+  16: { kind: flamingOil }
+  17: { kind: flamingOil }
+  18: { kind: flamingOil }
+  19: { kind: flamingOil }
+  20: { kind: flamingOil }
+  21: { kind: flamingOil }
+  22: { kind: flamingOil }
+  23: { kind: flamingOil }
+  24: { kind: flamingOil }
+  25: { kind: flamingOil }
+  26: { kind: flamingOil }
+  27: { kind: flamingOil }
+  28: { kind: flamingOil }
+  29: { kind: flamingOil }
+
+"Cliffs":
+  file: Cliffs.tsx
+  # Elevation. Every tile in this sheet is drawn from below, so the cell
+  # carrying it is the LOW side and the high ground lies across the marked
+  # edge: `drop: in`. Moving out across the edge is uphill, blocked like a
+  # wall unless the edge carries a ramp, which costs one extra move. Moving in
+  # across it is a fall for 2 damage. Ramps have no effect downhill.
+  #
+  # "Ramps/Ledges" is drawn the same way round and is also all `drop: in`. The
+  # polarity is written on every entry rather than assumed anyway, because a
+  # sheet that disagreed would be invisible to both tools.
+  #
+  # Tiles 0-2, 4-6 and 8-10 are a nine-slice for a raised area: the eight ring
+  # pieces are transparent overlays laid on the low cells around it, tile 5 is
+  # the high ground itself. The four corners share no orthogonal edge with the
+  # high ground, so they are art only.
+  #
+  # Directions are for the unrotated tile: left W, right E, top N, bottom S.
+  0:  { kind: ignore }   # NW corner of the nine-slice
+  2:  { kind: ignore }   # NE corner
+  8:  { kind: ignore }   # SW corner
+  10: { kind: ignore }   # SE corner
+  1:  { kind: cliff, drop: in, edge: S }
+  4:  { kind: cliff, drop: in, edge: E }
+  6:  { kind: cliff, drop: in, edge: W }
+  3:
+    - { kind: cliff, drop: in, edge: W }
+    - { kind: cliff, drop: in, edge: S }
+  9:  { kind: cliff, drop: in, edge: N, ramp: true }
+  7:
+    - { kind: floor }
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: S, ramp: true }
+  12:
+    - { kind: floor }
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: S }
+  13:
+    - { kind: floor }
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: W }
+  14:
+    - { kind: floor }
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: W }
+    - { kind: cliff, drop: in, edge: E }
+  5:  { kind: floor }    # dirt, the high ground of the nine-slice
+  11: { kind: floor }    # dirt
+  15: { kind: pit }      # mine shaft
+
+"Ramps/Ledges":
+  file: Ledges.tsx
+  # Ledges are cliffs; the ramps here are the same element as Cliffs ramps.
+  #
+  # Same polarity as "Cliffs". The yellow hazard stripe is the raised edge and
+  # the middle of the tile is the low floor, so the cell carrying a striped
+  # edge is the LOW side and the high ground is across it: `drop: in`.
+  #
+  # Several of these tiles are partial art meant to be layered to build a
+  # particular picture, so the same cell can carry more than one and the same
+  # edge can be written more than once. The library keeps them consistent; the
+  # converter warns if two layered tiles disagree about an edge.
+  #
+  # A ramp costs one extra move uphill. `steep: true` makes it two. Steepness
+  # is baked into the art on 4, 9 and 10.
+  #
+  # Which edges are striped, where the stripe breaks for a ramp, and which
+  # tiles carry the "steep" label were all measured off the sheet.
+  0:  { kind: ignore }                                    # corner art, no stripe
+  1:  { kind: cliff, drop: in, edge: S }
+  2:  { kind: cliff, drop: in, edge: S, ramp: true }
+  3:
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: E }
+  4:  { kind: cliff, drop: in, edge: E, ramp: true, steep: true }
+  5:  { kind: cliff, drop: in, edge: S }
+  6:
+    - { kind: cliff, drop: in, edge: S }
+    - { kind: cliff, drop: in, edge: E }
+  8:
+    - { kind: cliff, drop: in, edge: N }
+    - { kind: cliff, drop: in, edge: E, ramp: true }
+  9:
+    - { kind: cliff, drop: in, edge: N }
+    - { kind: cliff, drop: in, edge: E, ramp: true, steep: true }
+  10:
+    - { kind: cliff, drop: in, edge: N, ramp: true, steep: true }
+    - { kind: cliff, drop: in, edge: E }
+  11: { kind: cliff, drop: in, edge: S }
+  12:
+    - { kind: cliff, drop: in, edge: N }
+    - { kind: cliff, drop: in, edge: S }
+  13: { kind: floor }
+  14: { kind: floor }
+  15: { kind: floor }
+  16: { kind: floor }
+  17: { kind: cliff, drop: in, edge: S }
+  22: { kind: cliff, drop: in, edge: S, ramp: true }
+  27: { kind: cliff, drop: in, edge: S }
+  28: { kind: cliff, drop: in, edge: S }
+  29: { kind: floor }
+  # Partial pieces. These stripe only part of an edge because they are drawn to
+  # combine, but the edge they mark is a real boundary all the same.
+  7:
+    - { kind: cliff, drop: in, edge: S, ramp: true }
+    - { kind: cliff, drop: in, edge: E, ramp: true }
+  19: { kind: cliff, drop: in, edge: S }
+  20: { kind: cliff, drop: in, edge: S }
+  21:
+    - { kind: cliff, drop: in, edge: S }
+    - { kind: cliff, drop: in, edge: E }
+  23:
+    - { kind: cliff, drop: in, edge: S, ramp: true }
+    - { kind: cliff, drop: in, edge: W }
+  24:
+    - { kind: cliff, drop: in, edge: N, ramp: true }
+    - { kind: cliff, drop: in, edge: W }
+  25:
+    - { kind: cliff, drop: in, edge: S, ramp: true }
+    - { kind: cliff, drop: in, edge: W }
+    - { kind: cliff, drop: in, edge: E }
+  # The word "steep" on its own, laid over a ramp to upgrade it. Steepness uses
+  # both conventions in this sheet, the same way pusher phases do: baked into
+  # the art on 4, 9 and 10, layered as this overlay everywhere else.
+  # Unrotated it names the ramp running from the centre of the tile to the
+  # right, so edge E, and it rotates with the tile like any other direction.
+  26: { kind: steepMarker, edge: E }
+  18: { kind: ignore }   # art only, same as 0 and 13-16
+  # Row 6, added this session: the sheet was extended by one row (30->36
+  # tiles, tilecount/image height updated in Ledges.tsx, columns unchanged
+  # so every earlier id is untouched). Tile 30 draws a genuine 2-level drop
+  # on its south edge - confirmed against the real Straightaway6 board and
+  # the project owner's own numbers ((4,1)=-1, (4,2)=-1, (4,3)=+1), and
+  # distinct from the ordinary "layered partial pieces" convention used
+  # everywhere else on this sheet: this is new art specifically drawn to
+  # show two levels, not a decorative fragment of one. 31-35 are blank.
+  30: { kind: cliff, drop: in, edge: S, levels: 2 }
+  31: { kind: ignore }
+  32: { kind: ignore }
+  33: { kind: ignore }
+  34: { kind: ignore }
+  35: { kind: ignore }
+
+"Gravel":
+  file: Gravel.tsx
+  # A robot executing a Rotate Right or Rotate Left on gravel then slides one
+  # square in the OPPOSITE direction of the turn. In play this usually looks
+  # like a Move 1 plus a rotation in the direction of the card.
+  # The occupied squares are the terrain; the ragged outlines exist to tile
+  # across adjacent cells and carry no meaning of their own.
+  0 : { kind: gravel }
+  1 : { kind: gravel }
+  2 : { kind: gravel }
+  5 : { kind: gravel }
+  6 : { kind: gravel }
+  7 : { kind: gravel }
+  8 : { kind: gravel }
+  10: { kind: gravel }
+  11: { kind: gravel }
+  12: { kind: gravel }
+  13: { kind: gravel }
+  14: { kind: gravel }
+  15: { kind: gravel }
+  16: { kind: gravel }
+  17: { kind: gravel }
+  18: { kind: gravel }
+  19: { kind: gravel }
+  20: { kind: gravel }
+  21: { kind: gravel }
+  22: { kind: gravel }
+  23: { kind: gravel }
+  24: { kind: gravel }
+  # 3, 4 and 9 are blank: no solid pixels on any of the four sheets, only
+  # a stray fragment or a wisp of soft alpha.
+  3 : { kind: ignore }
+  4 : { kind: ignore }
+  9 : { kind: ignore }
+
+"Mud":
+  file: Mud.tsx
+  # A robot that stops in mud slides one square the way oil does, but one only.
+  # A robot starting a Move 2 or Move 3 in mud does not move at all.
+  # The occupied squares are the terrain; the ragged outlines exist to tile
+  # across adjacent cells and carry no meaning of their own.
+  0 : { kind: mud }
+  1 : { kind: mud }
+  2 : { kind: mud }
+  5 : { kind: mud }
+  6 : { kind: mud }
+  7 : { kind: mud }
+  8 : { kind: mud }
+  10: { kind: mud }
+  11: { kind: mud }
+  12: { kind: mud }
+  13: { kind: mud }
+  14: { kind: mud }
+  15: { kind: mud }
+  16: { kind: mud }
+  17: { kind: mud }
+  18: { kind: mud }
+  19: { kind: mud }
+  20: { kind: mud }
+  21: { kind: mud }
+  22: { kind: mud }
+  23: { kind: mud }
+  24: { kind: mud }
+  # 3, 4 and 9 are blank: no solid pixels on any of the four sheets, only
+  # a stray fragment or a wisp of soft alpha.
+  3 : { kind: ignore }
+  4 : { kind: ignore }
+  9 : { kind: ignore }
+
+"Sand":
+  file: Sand.tsx
+  # A robot executing a Move 3 in sand does not move. A robot executing a
+  # Move 3 that enters sand stops in the first square of sand.
+  # The occupied squares are the terrain; the ragged outlines exist to tile
+  # across adjacent cells and carry no meaning of their own.
+  0 : { kind: sand }
+  1 : { kind: sand }
+  2 : { kind: sand }
+  5 : { kind: sand }
+  6 : { kind: sand }
+  7 : { kind: sand }
+  8 : { kind: sand }
+  10: { kind: sand }
+  11: { kind: sand }
+  12: { kind: sand }
+  13: { kind: sand }
+  14: { kind: sand }
+  15: { kind: sand }
+  16: { kind: sand }
+  17: { kind: sand }
+  18: { kind: sand }
+  19: { kind: sand }
+  20: { kind: sand }
+  21: { kind: sand }
+  22: { kind: sand }
+  23: { kind: sand }
+  24: { kind: sand }
+  # 3, 4 and 9 are blank: no solid pixels on any of the four sheets, only
+  # a stray fragment or a wisp of soft alpha.
+  3 : { kind: ignore }
+  4 : { kind: ignore }
+  9 : { kind: ignore }
+
+"Smoke":
+  file: Smoke.tsx
+  # Vapour rather than ground: it sits over whatever floor is there, which is
+  # why `smoke` is a cell property and not a floor kind. Laser fire does not
+  # penetrate it and a robot cannot be targeted in it or through it.
+  # Same kind as RallyX tile 0.
+  # The occupied squares are the terrain; the ragged outlines exist to tile
+  # across adjacent cells and carry no meaning of their own.
+  0 : { kind: smoke }
+  1 : { kind: smoke }
+  2 : { kind: smoke }
+  5 : { kind: smoke }
+  6 : { kind: smoke }
+  7 : { kind: smoke }
+  8 : { kind: smoke }
+  10: { kind: smoke }
+  11: { kind: smoke }
+  12: { kind: smoke }
+  13: { kind: smoke }
+  14: { kind: smoke }
+  15: { kind: smoke }
+  16: { kind: smoke }
+  17: { kind: smoke }
+  18: { kind: smoke }
+  19: { kind: smoke }
+  20: { kind: smoke }
+  21: { kind: smoke }
+  22: { kind: smoke }
+  23: { kind: smoke }
+  24: { kind: smoke }
+  # 3, 4 and 9 are blank: no solid pixels on any of the four sheets, only
+  # a stray fragment or a wisp of soft alpha.
+  3 : { kind: ignore }
+  4 : { kind: ignore }
+  9 : { kind: ignore }
+
+"Grass":
+  file: Grass.tsx
+  # 36 photographic grass plates, all fully opaque. Treated as decorative
+  # ground, the same as "Open Floor" - ASSUMED, not stated. If grass hinders
+  # movement it is a terrain kind instead and every line here changes.
+  0 : { kind: floor }
+  1 : { kind: floor }
+  2 : { kind: floor }
+  3 : { kind: floor }
+  4 : { kind: floor }
+  5 : { kind: floor }
+  6 : { kind: floor }
+  7 : { kind: floor }
+  8 : { kind: floor }
+  9 : { kind: floor }
+  10: { kind: floor }
+  11: { kind: floor }
+  12: { kind: floor }
+  13: { kind: floor }
+  14: { kind: floor }
+  15: { kind: floor }
+  16: { kind: floor }
+  17: { kind: floor }
+  18: { kind: floor }
+  19: { kind: floor }
+  20: { kind: floor }
+  21: { kind: floor }
+  22: { kind: floor }
+  23: { kind: floor }
+  24: { kind: floor }
+  25: { kind: floor }
+  26: { kind: floor }
+  27: { kind: floor }
+  28: { kind: floor }
+  29: { kind: floor }
+  30: { kind: floor }
+  31: { kind: floor }
+  32: { kind: floor }
+  33: { kind: floor }
+  34: { kind: floor }
+  35: { kind: floor }
+
+"5e_Exp1":
+  file: 5e_Exp1.tsx
+  # A mixed expansion sheet: water and currents on row 0, crushers with their
+  # digits on rows 1-4, and a few one-off devices on row 5. Only what Capstone4
+  # places is labelled so far; the rest stops the parser rather than guessing.
+  #
+  # Water, per the Board Elements reference: the first square of a movement is
+  # negated, so a Back-Up or Move 1 does not move and a Move 2 advances one.
+  # Moving INTO water from a non-water square treats it as open floor.
+  #
+  # Currents are water as well, so those tiles carry two elements. Directions
+  # are for the unrotated tile: left is W, right E, top N, bottom S.
+  # A curved current rotates a robot 90 degrees the way a curved belt does.
+  0:
+    - { kind: water }
+    - { kind: current, exit: E, entries: [W] }
+  1:  { kind: water }
+  # A drain. The reference says to treat drains as pits, and the sheet draws it
+  # as a whirlpool rather than a hole, but the effect is the same: destroyed.
+  2:  { kind: pit }
+  3:
+    - { kind: water }
+    - { kind: current, exit: S, entries: [W] }
+  4:
+    - { kind: water }
+    - { kind: current, exit: E, entries: [W] }   # same as 0, different art
+  5:
+    - { kind: water }
+    - { kind: current, exit: S, entries: [N, W] }
+  15:
+    - { kind: water }
+    - { kind: current, exit: S, entries: [W, E] }
+  50: { kind: randomizer }
+  51: { kind: teleporter }
+  # A ramp running bottom to top: the high ground is north, so the cell is the
+  # low side and the ramp crosses its N edge. Same shape as every other ramp
+  # in the library. The art agrees, hugging the north edge and tapering south.
+  52: { kind: cliff, drop: in, edge: N, ramp: true }
+  # columns 6-9 of every row are blank, as are c3 of rows 3, 4 and 5
+  # crusher banks: the registers are baked into the art
+  10: { kind: crusher, phases: [1] }
+  11: { kind: crusher, phases: [2] }
+  12: { kind: crusher, phases: [3] }
+  13: { kind: crusher, phases: [4] }
+  14: { kind: crusher, phases: [5] }
+  20: { kind: crusher, phases: [1] }
+  21: { kind: crusher, phases: [2] }
+  22: { kind: crusher, phases: [3] }
+  23: { kind: crusher, phases: [4] }
+  24: { kind: crusher, phases: [5] }
+  30: { kind: crusher, phases: [2, 4] }
+  40: { kind: crusher, phases: [2, 4] }
+  # blank crushers - digits layered on separately
+  31: { kind: crusher }
+  41: { kind: crusher }
+  32: { kind: wall, edge: W }
+  34: { kind: ignore }
+  35: { kind: ignore }
+  25: { kind: ignore }
+  42: { kind: ignore }
+  44: { kind: ignore }
+  45: { kind: ignore }
+  54: { kind: ignore }
+  55: { kind: ignore }
+  6: { kind: ignore }
+  7: { kind: ignore }
+  8: { kind: ignore }
+  9: { kind: ignore }
+  16: { kind: ignore }
+  17: { kind: ignore }
+  18: { kind: ignore }
+  19: { kind: ignore }
+  26: { kind: ignore }
+  27: { kind: ignore }
+  28: { kind: ignore }
+  29: { kind: ignore }
+  33: { kind: ignore }
+  36: { kind: ignore }
+  37: { kind: ignore }
+  38: { kind: ignore }
+  39: { kind: ignore }
+  43: { kind: ignore }
+  46: { kind: ignore }
+  47: { kind: ignore }
+  48: { kind: ignore }
+  49: { kind: ignore }
+  53: { kind: ignore }
+  56: { kind: ignore }
+  57: { kind: ignore }
+  58: { kind: ignore }
+  59: { kind: ignore }
+  66: { kind: ignore }
+  67: { kind: ignore }
+  68: { kind: ignore }
+  69: { kind: ignore }
+  76: { kind: ignore }
+  77: { kind: ignore }
+  78: { kind: ignore }
+  79: { kind: ignore }
+  86: { kind: ignore }
+  87: { kind: ignore }
+  88: { kind: ignore }
+  89: { kind: ignore }
+  96: { kind: ignore }
+  97: { kind: ignore }
+  98: { kind: ignore }
+  99: { kind: ignore }
+  # rows 6-9 carry nothing in columns 0-5 either
+  60: { kind: ignore }
+  61: { kind: ignore }
+  62: { kind: ignore }
+  63: { kind: ignore }
+  64: { kind: ignore }
+  65: { kind: ignore }
+  70: { kind: ignore }
+  71: { kind: ignore }
+  72: { kind: ignore }
+  73: { kind: ignore }
+  74: { kind: ignore }
+  75: { kind: ignore }
+  80: { kind: ignore }
+  81: { kind: ignore }
+  82: { kind: ignore }
+  83: { kind: ignore }
+  84: { kind: ignore }
+  85: { kind: ignore }
+  90: { kind: ignore }
+  91: { kind: ignore }
+  92: { kind: ignore }
+  93: { kind: ignore }
+  94: { kind: ignore }
+  95: { kind: ignore }

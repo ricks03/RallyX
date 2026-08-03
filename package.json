@@ -1,0 +1,13 @@
+{
+  "name": "roborally-web",
+  "private": true,
+  "workspaces": [
+    "engine",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  }
+}
