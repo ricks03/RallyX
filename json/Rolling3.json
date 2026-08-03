@@ -1,0 +1,1719 @@
+{
+   "cells" : [
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "stuntRamp" : {
+               "entry" : "N",
+               "exit" : "S"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand",
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "smoke" : true,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "stuntRamp" : {
+               "entry" : "S",
+               "exit" : "N"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "flamingOil"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "stuntRamp" : {
+               "entry" : "N",
+               "exit" : "S"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "smoke" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "smoke" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "stuntRamp" : {
+               "entry" : "S",
+               "exit" : "N"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand",
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand",
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "gravel"
+            ]
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "W" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pitStop" : true
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ],
+               "S" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "spikes"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "sand"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff",
+                     "ramp" : {
+                        "extraMoves" : 1
+                     }
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "drop" : "in",
+                     "kind" : "cliff"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ]
+   ],
+   "height" : 12,
+   "name" : "Rolling3",
+   "width" : 12
+}

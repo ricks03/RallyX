@@ -1,0 +1,16 @@
+{
+  "name": "Hairpin Sprint",
+  "lifeTokens": 3,
+
+  "dock": null,
+
+  "boards": [
+    { "id": "Hairpin2", "gridX": 0, "gridY": 0, "rotation": 0 }
+  ],
+
+  "flags": [
+    { "number": 1, "board": "Hairpin2", "x": 2,  "y": 9 },
+    { "number": 2, "board": "Hairpin2", "x": 9,  "y": 2 },
+    { "number": 3, "board": "Hairpin2", "x": 6,  "y": 6 }
+  ]
+}

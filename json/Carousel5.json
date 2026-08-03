@@ -1,0 +1,2035 @@
+{
+   "cells" : [
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E",
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none",
+                  "N" : "CW"
+               }
+            },
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E",
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none",
+                  "N" : "CW"
+               }
+            },
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            },
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "E" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "crusher" : {
+               "phases" : [
+                  3
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "crusher" : {
+               "phases" : [
+                  1
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none",
+                  "W" : "CW"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "W"
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "crusher" : {
+               "phases" : [
+                  1
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  2,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ],
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "N" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "N",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "S"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "E"
+               ],
+               "exit" : "W",
+               "express" : false,
+               "rotates" : {
+                  "E" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none",
+                  "W" : "CW"
+               }
+            },
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "crusher" : {
+               "phases" : [
+                  3,
+                  4
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "E",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ],
+               "push" : "W"
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  3,
+                  5
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "pusher" : {
+               "edge" : "W",
+               "phases" : [
+                  2,
+                  4
+               ],
+               "push" : "E"
+            },
+            "repair" : {
+               "hammer" : true,
+               "wrenches" : 1
+            }
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CCW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "gear" : {
+               "rotation" : "CW"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "W" : [
+                  {
+                     "count" : 1,
+                     "kind" : "laser"
+                  },
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0,
+            "terrain" : [
+               "oil"
+            ]
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "beams" : [
+               {
+                  "along" : "E",
+                  "count" : 1
+               }
+            ],
+            "edges" : {
+               "E" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "W"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "N" : "none",
+                  "W" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "S",
+               "express" : true,
+               "rotates" : {
+                  "N" : "none"
+               }
+            },
+            "crusher" : {
+               "phases" : [
+                  5
+               ]
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "N" : "CCW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "W"
+               ],
+               "exit" : "E",
+               "express" : false,
+               "rotates" : {
+                  "W" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ],
+      [
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N",
+                  "E"
+               ],
+               "exit" : "S",
+               "express" : false,
+               "rotates" : {
+                  "E" : "CCW",
+                  "N" : "none"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "conveyor" : {
+               "entries" : [
+                  "N"
+               ],
+               "exit" : "W",
+               "express" : true,
+               "rotates" : {
+                  "N" : "CW"
+               }
+            },
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "pit"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {
+               "S" : [
+                  {
+                     "kind" : "wall"
+                  }
+               ]
+            },
+            "flamer" : {
+               "colour" : "orange",
+               "phases" : [
+                  1,
+                  2,
+                  4
+               ]
+            },
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         },
+         {
+            "edges" : {},
+            "floor" : {
+               "kind" : "open"
+            },
+            "level" : 0
+         }
+      ]
+   ],
+   "height" : 12,
+   "name" : "Carousel5",
+   "width" : 12
+}

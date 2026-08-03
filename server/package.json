@@ -1,0 +1,28 @@
+{
+  "name": "@roborally/server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@roborally/engine": "*",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "mysql2": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "bin": {
+    "rr-import": "./dist/import-cli.js"
+  }
+}
